@@ -30,7 +30,7 @@ int main(){
 
     int ans = getSecondLargest(arr,n);
 
-    cout<<"second largest array is:"<<endl;
+    cout<<"second largest array is:"<<ans<<endl;
 
     return 0;
 }
