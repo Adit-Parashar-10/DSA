@@ -10,6 +10,9 @@ int main(){
         cin>>arr[i];
     }
 
+    int k;
+    cout<<"enter the value for lower bound";
+    cin>>k;
 
     return 0;
 }
