@@ -14,5 +14,7 @@ int main(){
     cout<<"enter the value for lower bound";
     cin>>k;
 
+    
+
     return 0;
 }
