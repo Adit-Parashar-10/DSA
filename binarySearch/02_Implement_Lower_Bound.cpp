@@ -9,19 +9,6 @@ int main(){
     for(int i=0; i<n; i++){
         cin>>arr[i];
     }
-    int k;
-    cout<<"enter the searching element:";
-    cin>>k;
-
-    for(int i=0; i<n; i++){
-        if(arr[i] == k){
-            cout<<k;
-        }
-    }
-
-
-
-
 
 
     return 0;
