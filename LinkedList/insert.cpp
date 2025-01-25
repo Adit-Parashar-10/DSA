@@ -7,7 +7,7 @@ class Node{
     Node* next;
 
     Node(){
-        this->data = 0
+        this->data = 0;
         this->next = NULL;
     }
 
@@ -18,16 +18,29 @@ class Node{
 
 };
 
-void insertAtHead(int data,Node* head){
+void insertAtHead(int data, Node* &head){
 
     Node* newNode = new Node(data);
     newNode->next=head;
     head = newNode;
 }
 
+Node print(Node* head){
+    Node* temp=head;
+    while(temp != NULL){
+        cout<<temp->data<<"-->";
+        temp=temp->next;
+    }
+    cout<<"NULL"<<endl;
+}
+
 int main(){
     
-    
+    Node* head = new Node(10);
+
+    insertAtHead(20,head);
+
+    print(head);
 
 
     return 0;
