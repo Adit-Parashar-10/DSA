@@ -16,14 +16,18 @@ class Node{
         this->next=NULL;
     }
 
-
-
 };
+
+void insertAtHead(int data,Node* head){
+
+    Node* newNode = new Node(data);
+    newNode->next=head;
+    head = newNode;
+}
 
 int main(){
     
-
-
+    
 
 
     return 0;
