@@ -18,12 +18,25 @@ class Node{
 
 };
 
-void insertAtHead(int data, Node* &head){
+void insertAtHead(int data, Node* &head, Node* &tail){
+
+    if(head==NULL){
+        tail=newNode;
+    }
 
     Node* newNode = new Node(data);
     newNode->next=head;
     head = newNode;
 }
+
+insertAtTail(int data, Node* &tail){
+    Node* newNode = new Node(data);
+    tail->next=newNode;
+    tail = newNode;
+
+}
+
+void insertAtTail 
 
 Node print(Node* head){
     Node* temp=head;
