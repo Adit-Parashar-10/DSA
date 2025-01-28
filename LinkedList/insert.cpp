@@ -20,9 +20,7 @@ class Node{
 
 void insertAtHead(int data, Node* &head, Node* &tail){
 
-    if(head==NULL){
-        tail=newNode;
-    }
+    
 
     Node* newNode = new Node(data);
     newNode->next=head;
@@ -35,8 +33,7 @@ insertAtTail(int data, Node* &tail){
     tail = newNode;
 
 }
-
-void insertAtTail 
+ 
 
 Node print(Node* head){
     Node* temp=head;
@@ -50,9 +47,10 @@ Node print(Node* head){
 int main(){
     
     Node* head = new Node(10);
+    Node* tail = NULL;
 
-    insertAtHead(20,head);
-
+    insertAtHead(20,head,tail);
+    insertAtHead(30,head,tail);
     print(head);
 
 
