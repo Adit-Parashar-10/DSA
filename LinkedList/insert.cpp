@@ -24,8 +24,6 @@ void insertAtHead(int data, Node* &head, Node* &tail){
         tail=newNode;
     }
 
-
-
     Node* newNode = new Node(data);
     newNode->next=head;
     head = newNode;
