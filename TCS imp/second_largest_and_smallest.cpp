@@ -1,5 +1,18 @@
 #include<iostream>
 using namespace std;
+
+int getSmallest(){
+    for(int i=0; i<n; i++){
+        if(arr[i] < smlst){
+            ssmlst = smlst;
+            smlst = arr[i];
+        }
+        else if(arr[i] > smlst && arr[i] < ssmlst){
+            ssmlst = arr[i];
+        }
+    }
+}
+
 int main(){
     int n;
     cout<<"Enter the size of an array:";
@@ -25,15 +38,7 @@ int main(){
         }
     }
 
-    for(int i=0; i<n; i++){
-        if(arr[i] < smlst){
-            ssmlst = smlst;
-            smlst = arr[i];
-        }
-        else if(arr[i] > smlst && arr[i] < ssmlst){
-            ssmlst = arr[i];
-        }
-    }
+    
 
     cout<<"Largest element: "<<lgst<<endl;
     cout<<"Second largest element: "<<slgst<<endl;
