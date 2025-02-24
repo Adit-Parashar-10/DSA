@@ -12,6 +12,8 @@ int main(){
 
     int lgst = INT16_MIN;
     int slgst = INT16_MIN;
+    int smlst = INT16_MAX;
+    int ssmlst = INT16_MAX;
 
     for(int i=0; i<n; i++){
         if(arr[i] > lgst){
@@ -24,11 +26,19 @@ int main(){
     }
 
     for(int i=0; i<n; i++){
-        
+        if(arr[i] < smlst){
+            ssmlst = smlst;
+            smlst = arr[i];
+        }
+        else if(arr[i] > smlst && arr[i] < ssmlst){
+            ssmlst = arr[i];
+        }
     }
 
     cout<<"Largest element: "<<lgst<<endl;
     cout<<"Second largest element: "<<slgst<<endl;
+    cout<<"Smallest element: "<<smlst<<endl;
+    cout<<"Second smallest element: "<<ssmlst<<endl;
 
     return 0;
 }
